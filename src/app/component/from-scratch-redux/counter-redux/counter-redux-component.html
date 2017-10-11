@@ -1,0 +1,18 @@
+<div id="main-body">
+
+    <div class="card">
+        <div class="card-block">
+            <h4 class="card-title">Simple redux counter example</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{store.getState()}}</h6>
+
+            <button type="button" (click)="initStore()" class="btn btn-danger">Init store</button>
+            <button type="button" (click)="increment()" class="btn btn-success">+</button>
+            <button type="button" (click)="decrement()" class="btn btn-secondary">-</button>
+
+            <button type="button" class="btn btn-warning" (click)="add(operand.value)" class="btn btn-secondary">Add</button>
+            <input #operand type="number"/>
+        </div>
+    </div>
+
+
+</div>
