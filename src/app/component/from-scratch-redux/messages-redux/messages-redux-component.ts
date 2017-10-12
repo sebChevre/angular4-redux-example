@@ -28,13 +28,11 @@ export class MessagesReduxComponent implements OnInit{
 
                 //console.log(state.messages.splice(idx,1))
                 return {
-                    messages: state.messages.splice(idx,1)
 
-                    //messages: [
-                       // ...state.messages.slice(0, idx),
-                        //...state.messages.slice(idx + 1, state.messages.length)
-                      //  state.messages.splice(idx,1)
-                    //]
+                    messages: [
+                       ...state.messages.slice(0, idx),
+                       ...state.messages.slice(idx + 1, state.messages.length)
+                    ]
                 }
         }
     }

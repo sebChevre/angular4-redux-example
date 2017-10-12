@@ -1,0 +1,21 @@
+<div id="main-body">
+
+    <div class="card">
+        <div class="card-block">
+            <h4 class="card-title">Messages Real Redux example</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{messages().length}}</h6>
+
+            <li *ngFor="let message of messages(); let i = index;">
+                <span>{{message}}</span><button type="button" (click)="deleteMessage(i)" class="btn btn-secondary">Delete</button>
+            </li>
+
+            <button type="button" (click)="initStore()" class="btn btn-danger">Init store</button>
+            <button type="button" (click)="addMessage(message1.value)" class="btn btn-success">Add message</button>
+            <input #message1 type="text"/>
+
+
+        </div>
+    </div>
+
+
+</div>
